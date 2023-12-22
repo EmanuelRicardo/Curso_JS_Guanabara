@@ -1,5 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
 body {
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
+}
+
+header {
+}
+
+
+header .topo {
+    background-color: bisque;
+}
+
+header .topo {
+    display: flex;
+    justify-content: center;
+}
+
+header .topo h1,
+.container {
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+img {
+    height: 300px;
+}
+
+section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+h2 {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+p {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 90px;
+}
+
+#futebol_americano,
+#futebol {
+    background-color: rgb(185, 106, 9);
+}
+
+#basquete,
+#mma {
+    background-color: bisque;
 }
