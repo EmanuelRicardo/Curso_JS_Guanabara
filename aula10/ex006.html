@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="saiu()">
+    <div id="area">
         Interaja...
     </div>
 
@@ -15,6 +15,11 @@
 
     <script>
         var a = window.document.getElementById('area')
+        a.addEventListener ('click', clicar)
+        a.addEventListener ('mouseenter', entrar)
+        a.addEventListener ('mouseout', saiu)
+
+
         function clicar() {
             a.innerText = 'clicou'
             a.style.background = 'red'
