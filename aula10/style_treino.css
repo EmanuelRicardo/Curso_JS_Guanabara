@@ -10,3 +10,8 @@ select {
 strong {
     color: red;
 }
+
+#resultado {
+    padding-top: 20px;
+    padding-left: 5px;
+}
