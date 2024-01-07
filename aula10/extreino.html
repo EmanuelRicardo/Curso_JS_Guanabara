@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino</title>
+    <link rel="stylesheet" href="style_treino.css">
+</head>
+<body>
+    <h1>Calculadora que faz: Soma, subtração, multiplicação e divisão</h1>
+    <input type="number" placeholder="Digite um número">
+    <!-- Ideia que eu tive mais que não pude dar seguimento agr
+    <select name="" id="">
+        <option value="">soma</option>
+        <option value="">subtração</option>
+        <option value="">divisão</option>
+        <option value="">multiplicação</option>
+    </select>
+    -->
+    <input type="number" placeholder="Digite um número">
+    <button type="reset">calcular</button>
+    <div id="resultado">O resultado irá aparecer aqui</div>
+
+    <script>
+        var pn1 = window.document.getElementsByTagName('input')[0]
+        var pn2 = window.document.getElementsByTagName('input') [1]
+        var botão = window.document.getElementsByTagName('button') [0]
+        botão.addEventListener ('click', click_botão)
+
+
+        function click_botão(){
+            var n1 = Number (pn1.value)
+            var n2 = Number (pn2.value)
+            var soma = n1 + n2
+            var sub = n1 - n2
+            var div = n1 / n2
+            var mul = n1 * n2
+            var resultado = window.document.getElementById('resultado')
+            resultado.innerHTML = `<strong> Os resultados são: </strong> <br> ${n1} + ${n2} = ${soma} <br> ${n1} - ${n2} = ${sub} <br> ${n1} / ${n2} = ${div} <br> ${n1} * ${n2} = ${mul}`
+        }
+
+    </script>
+</body>
+</html>

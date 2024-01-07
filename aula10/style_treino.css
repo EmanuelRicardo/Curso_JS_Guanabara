@@ -1,0 +1,12 @@
+h1 {
+    font-size: 18px;
+}
+
+select {
+    width: 55px;
+    font-size: 12px;
+}
+
+strong {
+    color: red;
+}
