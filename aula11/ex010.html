@@ -7,6 +7,7 @@
 </head>
 <body>
     <h1>Sistema de multas</h1>
+    <p>A velocidade da pista é de até <strong>60 km/h</strong></p>
     <div>Velocidade do carro: 
         <input type="number" name="velocidade" id="velocidade">
         Km/h
@@ -25,6 +26,11 @@
             var vel = Number(velocidade.value)
             var resultado = window.document.getElementsByTagName ('div')[1]
             resultado.innerHTML = `A sua velocidade foi de <strong> ${vel} km/h </strong>`
+            if (vel > 60){
+                resultado.innerHTML += `<br>A sua velocidade está acima do permitido que é de <strong>60 km/h</strong>, você está MULTADO!!!`
+            }else {
+                resultado.innerHTML += `<br>Parabéns, sua velocidade está dentro do que é permitido pra pista, matenha os sintos afivelados e BOA VIAGEM!!`
+            }
         }
     
     </script>
