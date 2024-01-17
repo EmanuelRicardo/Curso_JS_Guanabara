@@ -28,10 +28,13 @@
             var pais = window.document.getElementsByTagName ('input')[1]
             var resposta = window.document.getElementsByTagName('p')[0]
 
-            if (nacionalidade == pais) {
-                resposta.innerHTML = `Sendo do(a) ${nacionalidade} e estando no ${pais}, você está em casa :)`
+            var nacionalidade_valor = nacionalidade.value
+            var pais_valor = pais.value
+
+            if (nacionalidade_valor == pais_valor) {
+                resposta.innerHTML = `Sendo do(a) ${nacionalidade_valor} e estando no ${pais_valor}, você está em casa :)`
             } else {
-                resposta.innerHTML = `Sendo do(a) ${nacionalidade} e estando no ${pais}, você está turistando :)`
+                resposta.innerHTML = `Sendo do(a) ${nacionalidade_valor} e estando no ${pais_valor}, você está turistando :)`
             }
             
         }
