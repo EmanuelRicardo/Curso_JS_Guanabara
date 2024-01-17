@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    <div>
+        Digite o nome do país onde você vive: 
+        <input type="text">
+    </div>
+    <div>
+        Digite o nome do país onde você está hoje:
+        <input type="text">
+        <button>Enviar</button>
+    </div>
+    <p></p>
+
+    <script>
+        var botão = window.document.getElementsByTagName ('button')[0]
+        botão.addEventListener ('click', clicar_no_botão)
+
+        function clicar_no_botão() {
+            var nacionalidade = window.document.getElementsByTagName ('input')[0]
+            var pais = window.document.getElementsByTagName ('input')[1]
+            var resposta = window.document.getElementsByTagName('p')[0]
+
+            if (nacionalidade == pais) {
+                resposta.innerHTML = `Sendo do(a) ${nacionalidade} e estando no ${pais}, você está em casa :)`
+            } else {
+                resposta.innerHTML = `Sendo do(a) ${nacionalidade} e estando no ${pais}, você está turistando :)`
+            }
+            
+        }
+        
+    </script>
+    
+</body>
+</html>
