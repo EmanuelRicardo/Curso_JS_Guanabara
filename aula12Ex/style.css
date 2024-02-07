@@ -1,0 +1,17 @@
+body{
+    background-color: rgba(70, 142, 236);
+}
+
+header h1{
+    display: flex;
+    justify-content:center;
+}
+
+section{
+    background-color: white;
+    border-radius: 20px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+
+}
