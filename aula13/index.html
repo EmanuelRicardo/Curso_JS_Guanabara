@@ -12,15 +12,19 @@
     </header>
     <form action="">
         <div class="container">
-            <div>Ano de nascimento: <input type="number" required></div>
+            <div id="nascimento">Ano de nascimento: <input type="number"></div>
             <div>
                 Sexo:
                 <input type="radio" name="sexo" required>Masculino
                 <input type="radio" name="sexo" required>Feminino
             </div>
-            <button><strong>Verificar</strong></button>
-            <p>Preencha os dados acima para ver o resultado</p>
+            <p>
+                <input type="button" value="Verificar" id="botao1">
+            </p>
+            <p id="resposta">Preencha os dados acima para ver o resultado</p>
         </div>
     </form>
+
+    <script src="script.js"></script>
 </body>
 </html>
