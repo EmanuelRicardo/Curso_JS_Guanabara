@@ -1,0 +1,25 @@
+body {
+    background-color: rgb(0, 204, 255);
+}
+
+header {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+.container {
+    background-color: white;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    padding-right: 15px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px;
+}
+
+div {
+    padding-bottom: 8px;
+}
