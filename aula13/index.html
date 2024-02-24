@@ -12,14 +12,14 @@
     </header>
     <form action="">
         <div class="container">
-            <div id="nascimento">Ano de nascimento: <input type="number"></div>
+            <div>Ano de nascimento: <input type="number" id="nascimento"></div>
             <div>
                 Sexo:
-                <input type="radio" name="sexo" required>Masculino
-                <input type="radio" name="sexo" required>Feminino
+                <input type="radio" name="sexo" >Masculino
+                <input type="radio" name="sexo" >Feminino
             </div>
             <p>
-                <input type="button" value="Verificar" id="botao1">
+                <input type="button" value="Verificar" id="botao1" onclick="verificar()">
             </p>
             <p id="resposta">Preencha os dados acima para ver o resultado</p>
         </div>

@@ -1,8 +1,13 @@
-var botao1 = window.document.getElementById('botao1') 
-botao1.addEventListener ('click', verificar)
-
 function verificar () {
-    var nascimento = window.document.getElementById ('nascimento')
+    var data = new Date()
+    var ano_atual = data.getFullYear()
+    var nascimento_usuario = window.document.getElementById ('nascimento').value
     var resposta = window.document.getElementById ('resposta')
-    resposta.innerHTML (`${nascimento.value}`)
+    window.alert (`${ano_atual}`)
+    window.alert (`${nascimento_usuario}`)
+    if (nascimento_usuario.length == 0 || nascimento_usuario > ano_atual){
+        window.alert ('Tem algo de errado, tente novamente.')
+    } else {
+        window.alert('Tudo certo')
+    }
 }
