@@ -1,6 +1,6 @@
 var contador = 1
-while (contador < 6){
-    console.log("Tudo bem")
+while (contador <= 300){
+    console.log(`Tudo bem! Esse é "tudo bem" de número ${contador}`)
     contador++
 }
 
