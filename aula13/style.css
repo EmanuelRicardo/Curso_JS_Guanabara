@@ -23,3 +23,17 @@ form {
 div {
     padding-bottom: 5px;
 }
+
+img {
+    width: 200px;
+}
+
+#foto {
+    display: flex;
+    margin: auto;
+    padding-top: 10px;
+}
+
+p {
+    font-weight: bold;
+}
