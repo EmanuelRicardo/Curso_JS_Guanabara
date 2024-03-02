@@ -3,21 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabuada</title>
+    <title>Super contador</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Tabuada</h1>
+        <h1>Vamos contar</h1>
     </header>
     <section>
         <div class="container">
-            <div>Olá</div>
-            <div>Olá</div>
+            <div class="topo">
+                <label for="">Inicio: </label>
+                <input type="number" name="n_inicial" id="n_inicial">
+            </div>
+            <div>
+                <label for="">Fim:</label>
+                <input type="number" id="n_final">
+            </div>
+            <div>
+                <label for="">Passos: </label>
+                <input type="number" name="" id="n_passos">
+            </div>
+            <div>
+                <button onclick="contar()">contar</button>
+            </div>
+            <p>Preparando a contagem...</p>
         </div>
     </section>
     <footer>
         &copy;CursoemVideo
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
