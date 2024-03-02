@@ -1,0 +1,22 @@
+body {
+    background-color: rgb(0, 130, 255);
+}
+
+header, footer {
+    color: white;
+}
+
+
+
+header, footer {
+    text-align: center;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background-color: white;
+}
