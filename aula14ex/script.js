@@ -3,25 +3,32 @@ function contar(){
     var n_final = window.document.getElementById ('n_final').value
     var intervalo = window.document.getElementById ('intervalo').value
     var resposta = window.document.getElementById ('resposta')
-    var numero_calculado = ''
-    var numero_resposta = ''
+    var n_calculado = ''
+    var n_resposta = ''
+    var n_next = ''
+    var n_prev = ''
 
-    window.alert (`Inicial = ${n_inicial}`)
-    window.alert (`Final = ${n_final}`)
-    window.alert (`Intervalo = ${intervalo}`)
-    if (n_inicial.length == 0 || n_final.length == 0){
-        resposta.innerHTML = ("Impossivel contar. <br> Defina um número para o começo e outro para o final.")
-    } else if (intervalo.length == 0){
-        resposta.innerHTML = ("Impossivel contar. <br> Defina uma quantidade de passos.")
+    if (n_inicial.length == 0 || n_final.length == 0 || intervalo.length == 0){
+        resposta.innerHTML = ("Impossivel contar. <br> Defina um valor para cada uma das opções")
     } else if (intervalo == 0){
         window.alert ("Intervalo '0' é invalido, por isso consideraremos intervalo de um em um")
         var intervalo = 1
-    } else if (n_inicial > n_final) {
-        resposta.innerHTML = ("{ERRO} Numero inicial maior que numero final.")
-    } else if (intervalo > n_final) {
-        resposta.innerHTML = (`{ERRO} Número de passos não comportado. Observe:  ${intervalo} > ${n_final}`)
     } else {
-        resposta.innerHTML = ('Agora foi')
+        
+        resposta.innerHTML = ''
+        var i = Number(n_inicial)
+        var f = Number(n_final)
+        var p = Number(intervalo)
+
+        if (i < f){
+            //crescente
+            for (var c = i; c <= f; c += p)
+            resposta.innerHTML += ` ${c} `
+        } else if (i > f){
+            //decrescente
+            for (var c = i; c >= f; c-= p)
+            resposta.innerHTML += ` ${c} `
+        }
     }
 }
 
