@@ -6,10 +6,12 @@ function gerar(){
         window.alert (`[ERRO] Faltou escolher um número para a tabuada`)
     } else {
         contador = 1
+        tabuada_area.innerHTML = " "
         while (contador <= 10){
-            var resultado = n_escolhido * contador
+            let item = document.createElement ('option')
+            item.innerHTML = `${n_escolhido} * ${contador} = ${n_escolhido*contador}`
+            tabuada_area.appendChild(item)
             contador ++
-            tabuada_area.innerHTML += ` ${resultado} `
         }
     }
 }
