@@ -1,4 +1,4 @@
-function parimpar (n = 2){
+function parimpar (n = 4){
     if (n%2 == 0){
         return 'Par!!'
     } else {
@@ -7,5 +7,5 @@ function parimpar (n = 2){
     }                                
 }
 
-
+var resposta = parimpar()
 console.log (`${resposta}`)
