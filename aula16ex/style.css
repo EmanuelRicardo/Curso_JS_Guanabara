@@ -1,0 +1,40 @@
+body {
+    background-color: rgba(0, 195, 255, 0.986);
+}
+header {
+    text-align: center;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px;
+    width: 40%;
+}
+
+.primeira_parte {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    padding-right: 10px;
+}
+
+.primeira_parte, .segunda_parte{
+    padding-left: 10px;
+}
+
+.segunda_parte {
+    padding-bottom: 10px;
+}
+
+select {
+    height: 150px;
+    width: 150px;
+}
+
+
+
